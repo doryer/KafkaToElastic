@@ -1,8 +1,8 @@
 from kafka import KafkaConsumer
-from InitializeKafkaConsumer import InitializeKafkaConsumer
-from InitializeElasticConnection import InitializeElasticConnection
+from src.InitializeKafkaConsumer import InitializeKafkaConsumer
+from src.InitializeElasticConnection import InitializeElasticConnection
 import logging
-import config
+from config import config
 
 if __name__ == '__main__':
     kafka_consumer: InitializeKafkaConsumer = InitializeKafkaConsumer(config.topic_name, config.bootstrap_servers)

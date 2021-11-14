@@ -1,7 +1,7 @@
 import json
 import logging
 from kafka import KafkaConsumer
-import config
+from config import config
 
 
 class InitializeKafkaConsumer:
